@@ -4,10 +4,10 @@ jobs:
     docker:
       - image: byrnedo/alpine-curl
     environment:
-      product: Abhinav
+      product: Release
       subProduct: Circle CI
-      environment: Production
-      token: 04ff227a-334b-48b8-bd80-6341b321a259
+      environment: Staging
+      token: 6f7919c6-463e-4dee-93a3-996c26e0a844
       buildTool: CIRCLE_CI
       buildNumber: "<< pipeline.number >>"
     steps:
