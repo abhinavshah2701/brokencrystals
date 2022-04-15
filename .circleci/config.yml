@@ -6,15 +6,15 @@ jobs:
     environment:
       product: Release
       subProduct: Circle CI
-      environment: Staging
-      token: 27b67a20-0e0a-426e-b478-e066e3eff473
+      environment: Production
+      token: 27e81c70-cf9c-4dc6-a1cf-940c3c5a8d6e
       buildTool: CIRCLE_CI
       buildNumber: "<< pipeline.number >>"
     steps:
       - run:
           name: "Armorcode Validate"
           command: |
-              wget https://preprod.armorcode.ai/static/scripts/slastatus.sh
+              wget https://app.armorcode.com/static/scripts/slastatus.sh
               sh slastatus.sh
 workflows:
   armorcode-validation-workflow:
