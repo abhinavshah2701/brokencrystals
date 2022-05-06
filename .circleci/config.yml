@@ -7,7 +7,7 @@ jobs:
       product: Niki
       subProduct: n1
       environment: Production
-      token: 685d1940-560c-4658-bea5-56540f6c60f8
+      token: $token
       buildTool: CIRCLE_CI
       buildNumber: "<< pipeline.number >>"
     steps:
