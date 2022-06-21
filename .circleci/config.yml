@@ -10,7 +10,7 @@ jobs:
       token: $ARMORCODE_TOKEN
       buildTool: CIRCLE_CI
       buildNumber: "<< pipeline.number >>"
-      end: 30
+      end: 1
     steps:
       - run:
           name: "Armorcode Validate"
