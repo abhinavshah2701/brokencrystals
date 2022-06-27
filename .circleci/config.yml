@@ -4,8 +4,8 @@ jobs:
     docker:
       - image: byrnedo/alpine-curl
     environment:
-      product: Tool findings
-      subProduct: Tool findings
+      product: Tools findings
+      subProduct: Tools findings
       environment: Production
       token: $ARMORCODE_TOKEN
       buildTool: CIRCLE_CI
