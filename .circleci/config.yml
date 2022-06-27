@@ -4,13 +4,13 @@ jobs:
     docker:
       - image: byrnedo/alpine-curl
     environment:
-      product: Abhinav
-      subProduct: Circle CI
+      product: Tool findings
+      subProduct: Tool findings
       environment: Production
       token: $ARMORCODE_TOKEN
       buildTool: CIRCLE_CI
       buildNumber: "<< pipeline.number >>"
-      end: 2
+      end: 30
     steps:
       - run:
           name: "Armorcode Validate"
